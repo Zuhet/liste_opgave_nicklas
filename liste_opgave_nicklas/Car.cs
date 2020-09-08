@@ -8,7 +8,6 @@ namespace liste_opgave_nicklas
 {
     class Car
     {
-
         public int Id { get; set; }
 
         public string Model { get; set; }
@@ -20,6 +19,11 @@ namespace liste_opgave_nicklas
         public int Price { get; set; }
         public string Color { get; set; }
 
+        public Car()
+        {
+
+        }
+
         public Car(int id, string model, string brand, int year, int price, string color)
         {
             Id = id;
@@ -28,10 +32,6 @@ namespace liste_opgave_nicklas
             Year = year;
             Price = price;
             Color = color;
-        }
-        public Car()
-        {
-
         }
 
         public override string ToString()
